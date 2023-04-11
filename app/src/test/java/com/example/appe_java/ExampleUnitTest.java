@@ -1,4 +1,4 @@
-package com.example.appe_commerce_java;
+package com.example.appe_java;
 
 import org.junit.Test;
 
