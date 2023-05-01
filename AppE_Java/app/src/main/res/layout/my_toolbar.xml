@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mytoolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/main_backgroud"
+    android:padding="6dp"
+    android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_gravity="left|center"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:background="@drawable/arrow"-->
+<!--            android:backgroundTint="@color/blurred_text" />-->
+
+        <LinearLayout
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_search"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="16sp"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@null"
+                app:queryHint="Search..." />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/searchCamera"
+                android:layout_gravity="center"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/camera"
+                android:backgroundTint="@color/blurred_text" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="right|center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/cart"
+            android:backgroundTint="@color/blurred_text" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
